@@ -39,7 +39,7 @@ class KakaoViewController: UIViewController {
     
     //ImageView
     let profileImage = UIImageView().then {
-        $0.layer.cornerRadius = $0.frame.height/2
+        $0.layer.cornerRadius = 20
         $0.clipsToBounds = true
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.white.cgColor
@@ -232,6 +232,7 @@ class KakaoViewController: UIViewController {
             make.leadingMargin.equalTo(225)
             make.trailingMargin.equalTo(100)
         }
+        
         
         
         

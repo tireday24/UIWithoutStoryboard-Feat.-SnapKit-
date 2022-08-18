@@ -16,6 +16,8 @@
 		81E1803A28ACA84600882372 /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1803928ACA84600882372 /* KakaoViewController.swift */; };
 		81E1803D28ACA92E00882372 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 81E1803C28ACA92E00882372 /* SnapKit */; };
 		81E1804128ACB49C00882372 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 81E1804028ACB49C00882372 /* Then */; };
+		81E1804428ACCB7400882372 /* BaeminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1804328ACCB7400882372 /* BaeminViewController.swift */; };
+		81E1804628ACCBE900882372 /* MelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1804528ACCBE900882372 /* MelonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		81E1803028ACA80C00882372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E1803228ACA80C00882372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81E1803928ACA84600882372 /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
+		81E1804328ACCB7400882372 /* BaeminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaeminViewController.swift; sourceTree = "<group>"; };
+		81E1804528ACCBE900882372 /* MelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				81E1803928ACA84600882372 /* KakaoViewController.swift */,
+				81E1804328ACCB7400882372 /* BaeminViewController.swift */,
+				81E1804528ACCBE900882372 /* MelonViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -161,10 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E1804628ACCBE900882372 /* MelonViewController.swift in Sources */,
 				81E1802928ACA80B00882372 /* ViewController.swift in Sources */,
 				81E1802528ACA80B00882372 /* AppDelegate.swift in Sources */,
 				81E1803A28ACA84600882372 /* KakaoViewController.swift in Sources */,
 				81E1802728ACA80B00882372 /* SceneDelegate.swift in Sources */,
+				81E1804428ACCB7400882372 /* BaeminViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
