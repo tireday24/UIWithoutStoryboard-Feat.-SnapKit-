@@ -9,4 +9,26 @@ import UIKit
 
 class LocationViewController: BaseViewController {
     
+    let mainView = LocationView()
+    
+    override func loadView() {
+        self.view = mainView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .black
+    }
+    
+    override func configure() {
+        mainView.locationButton.addTarget(self, action: #selector(addressButtonClicked(_:)), for: .touchUpInside)
+    }
+    
+    @objc func addressButtonClicked(_ sender: UIButton) {
+        transionController(storyboard: "Main", vc: WebViewController(), transition: .push) { _ in
+        }
+    }
+    
+    
+    
 }

@@ -32,7 +32,42 @@
 		81F9C4E728B2090100334B04 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4E628B2090100334B04 /* LocationView.swift */; };
 		81F9C4EB28B209E000334B04 /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4EA28B209E000334B04 /* Extension + UIViewController.swift */; };
 		81F9C4ED28B20ABC00334B04 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4EC28B20ABC00334B04 /* ReuseIdentifier.swift */; };
+		81F9C51F28B20F4300334B04 /* UIWithoutStoryboardFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9C51B28B20F3800334B04 /* UIWithoutStoryboardFramework.framework */; };
+		81F9C52028B20F4300334B04 /* UIWithoutStoryboardFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9C51B28B20F3800334B04 /* UIWithoutStoryboardFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81F9C52628B215A500334B04 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 81F9C52528B215A500334B04 /* JGProgressHUD */; };
+		81F9C52A28B2188500334B04 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C52928B2188500334B04 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81F9C51A28B20F3800334B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81F9C51528B20F3800334B04 /* UIWithoutStoryboardFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81F9C4F928B20EFD00334B04;
+			remoteInfo = UIWithoutStoryboardFramework;
+		};
+		81F9C51C28B20F3800334B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81F9C51528B20F3800334B04 /* UIWithoutStoryboardFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81F9C50328B20EFD00334B04;
+			remoteInfo = UIWithoutStoryboardFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81F9C52128B20F4300334B04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				81F9C52028B20F4300334B04 /* UIWithoutStoryboardFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		81472ABA28B1EC5B0072BD26 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +95,8 @@
 		81F9C4E628B2090100334B04 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		81F9C4EA28B209E000334B04 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
 		81F9C4EC28B20ABC00334B04 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		81F9C51528B20F3800334B04 /* UIWithoutStoryboardFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIWithoutStoryboardFramework.xcodeproj; path = ../UIWithoutStoryboardFramework/UIWithoutStoryboardFramework.xcodeproj; sourceTree = "<group>"; };
+		81F9C52928B2188500334B04 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F9C52628B215A500334B04 /* JGProgressHUD in Frameworks */,
 				81E1803D28ACA92E00882372 /* SnapKit in Frameworks */,
 				81E1804128ACB49C00882372 /* Then in Frameworks */,
+				81F9C51F28B20F4300334B04 /* UIWithoutStoryboardFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +174,10 @@
 		81E1801828ACA80B00882372 = {
 			isa = PBXGroup;
 			children = (
+				81F9C51528B20F3800334B04 /* UIWithoutStoryboardFramework.xcodeproj */,
 				81E1802328ACA80B00882372 /* UIWithoutStoryboard */,
 				81E1802228ACA80B00882372 /* Products */,
+				81F9C51E28B20F4300334B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +208,7 @@
 		81E1803828ACA82A00882372 /* UIWithoutStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				81F9C52828B2186A00334B04 /* Web */,
 				81F9C4E828B209BB00334B04 /* Extension */,
 				81706CDA28B0748E004EE352 /* Netflix */,
 				81E1803928ACA84600882372 /* KakaoViewController.swift */,
@@ -194,6 +236,30 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		81F9C51628B20F3800334B04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81F9C51B28B20F3800334B04 /* UIWithoutStoryboardFramework.framework */,
+				81F9C51D28B20F3800334B04 /* UIWithoutStoryboardFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81F9C51E28B20F4300334B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81F9C52828B2186A00334B04 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				81F9C52928B2188500334B04 /* WebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +270,7 @@
 				81E1801D28ACA80B00882372 /* Sources */,
 				81E1801E28ACA80B00882372 /* Frameworks */,
 				81E1801F28ACA80B00882372 /* Resources */,
+				81F9C52128B20F4300334B04 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +280,7 @@
 			packageProductDependencies = (
 				81E1803C28ACA92E00882372 /* SnapKit */,
 				81E1804028ACB49C00882372 /* Then */,
+				81F9C52528B215A500334B04 /* JGProgressHUD */,
 			);
 			productName = UIWithoutStoryboard;
 			productReference = 81E1802128ACA80B00882372 /* UIWithoutStoryboard.app */;
@@ -245,15 +313,39 @@
 			packageReferences = (
 				81E1803B28ACA92E00882372 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				81E1803F28ACB49C00882372 /* XCRemoteSwiftPackageReference "Then" */,
+				81F9C52428B215A500334B04 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 81E1802228ACA80B00882372 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 81F9C51628B20F3800334B04 /* Products */;
+					ProjectRef = 81F9C51528B20F3800334B04 /* UIWithoutStoryboardFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				81E1802028ACA80B00882372 /* UIWithoutStoryboard */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		81F9C51B28B20F3800334B04 /* UIWithoutStoryboardFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIWithoutStoryboardFramework.framework;
+			remoteRef = 81F9C51A28B20F3800334B04 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		81F9C51D28B20F3800334B04 /* UIWithoutStoryboardFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIWithoutStoryboardFrameworkTests.xctest;
+			remoteRef = 81F9C51C28B20F3800334B04 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		81E1801F28ACA80B00882372 /* Resources */ = {
@@ -277,6 +369,7 @@
 				8166F03228B1DDBF00E61B30 /* Image.swift in Sources */,
 				81E1802928ACA80B00882372 /* ViewController.swift in Sources */,
 				81F9C4ED28B20ABC00334B04 /* ReuseIdentifier.swift in Sources */,
+				81F9C52A28B2188500334B04 /* WebViewController.swift in Sources */,
 				81F9C4E228B204C200334B04 /* Button.swift in Sources */,
 				81F9C4E528B208F800334B04 /* LocationViewController.swift in Sources */,
 				81E1802528ACA80B00882372 /* AppDelegate.swift in Sources */,
@@ -526,6 +619,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		81F9C52428B215A500334B04 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -538,6 +639,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 81E1803F28ACB49C00882372 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		81F9C52528B215A500334B04 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81F9C52428B215A500334B04 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UIWithoutStoryboardFramework
 
 class LoginViewController: BaseViewController {
     
@@ -28,7 +29,8 @@ class LoginViewController: BaseViewController {
     }
     
     @objc func locationButtonClicked(_ sender: UIButton) {
-        
+        transionController(storyboard: "Main", vc: LocationViewController(), transition: .present) { _ in
+        }
     }
     
     @objc func offClickedSwitch(_ sender: UISwitch) {

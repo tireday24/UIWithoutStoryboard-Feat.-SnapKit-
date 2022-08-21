@@ -13,7 +13,7 @@ enum Transition {
 }
 
 extension UIViewController {
-    func transion<T: UIViewController>(storyboard: String, vc: T, transition: Transition, complition: (T) -> ()) {
+    func transionController<T: UIViewController>(storyboard: String, vc: T, transition: Transition, complition: (T) -> ()) {
         
         let sb = UIStoryboard(name: storyboard, bundle: nil)
         
@@ -30,3 +30,4 @@ extension UIViewController {
         }
     }
 }
+
