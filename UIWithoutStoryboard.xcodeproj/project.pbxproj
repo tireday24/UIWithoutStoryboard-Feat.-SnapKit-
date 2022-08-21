@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81472ABB28B1EC5B0072BD26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81472ABA28B1EC5B0072BD26 /* LoginViewController.swift */; };
+		81472ABD28B1EC630072BD26 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81472ABC28B1EC630072BD26 /* LoginView.swift */; };
 		8166F03028B1B60400E61B30 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8166F02F28B1B60400E61B30 /* Label.swift */; };
 		8166F03228B1DDBF00E61B30 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8166F03128B1DDBF00E61B30 /* Image.swift */; };
 		81706CDD28B0770C004EE352 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CDC28B0770C004EE352 /* BaseViewController.swift */; };
 		81706CDF28B07713004EE352 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CDE28B07713004EE352 /* BaseView.swift */; };
 		81706CE228B0772B004EE352 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CE128B0772B004EE352 /* MainViewController.swift */; };
 		81706CE428B07733004EE352 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CE328B07733004EE352 /* MainView.swift */; };
+		81B4E8D528B1F2050041653F /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B4E8D428B1F2050041653F /* TextField.swift */; };
 		81E1802528ACA80B00882372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1802428ACA80B00882372 /* AppDelegate.swift */; };
 		81E1802728ACA80B00882372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1802628ACA80B00882372 /* SceneDelegate.swift */; };
 		81E1802928ACA80B00882372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1802828ACA80B00882372 /* ViewController.swift */; };
@@ -27,12 +30,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81472ABA28B1EC5B0072BD26 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		81472ABC28B1EC630072BD26 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8166F02F28B1B60400E61B30 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		8166F03128B1DDBF00E61B30 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		81706CDC28B0770C004EE352 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		81706CDE28B07713004EE352 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		81706CE128B0772B004EE352 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		81706CE328B07733004EE352 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		81B4E8D428B1F2050041653F /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		81E1802128ACA80B00882372 /* UIWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E1802428ACA80B00882372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E1802628ACA80B00882372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,11 +72,21 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		81472AB928B1EC3E0072BD26 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				81472ABA28B1EC5B0072BD26 /* LoginViewController.swift */,
+				81472ABC28B1EC630072BD26 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		8166F02E28B1B54700E61B30 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				8166F02F28B1B60400E61B30 /* Label.swift */,
 				8166F03128B1DDBF00E61B30 /* Image.swift */,
+				81B4E8D428B1F2050041653F /* TextField.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -78,20 +94,21 @@
 		81706CDA28B0748E004EE352 /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				81472AB928B1EC3E0072BD26 /* Login */,
 				81706CE028B0771D004EE352 /* Main */,
-				81706CDB28B076FE004EE352 /* Base */,
+				81706CDB28B076FE004EE352 /* Utility */,
 			);
 			path = Netflix;
 			sourceTree = "<group>";
 		};
-		81706CDB28B076FE004EE352 /* Base */ = {
+		81706CDB28B076FE004EE352 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				8166F02E28B1B54700E61B30 /* UI */,
 				81706CDC28B0770C004EE352 /* BaseViewController.swift */,
 				81706CDE28B07713004EE352 /* BaseView.swift */,
 			);
-			path = Base;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		81706CE028B0771D004EE352 /* Main */ = {
@@ -233,9 +250,12 @@
 				8166F03028B1B60400E61B30 /* Label.swift in Sources */,
 				81E1803A28ACA84600882372 /* KakaoViewController.swift in Sources */,
 				81E1802728ACA80B00882372 /* SceneDelegate.swift in Sources */,
+				81472ABD28B1EC630072BD26 /* LoginView.swift in Sources */,
 				81706CDD28B0770C004EE352 /* BaseViewController.swift in Sources */,
+				81B4E8D528B1F2050041653F /* TextField.swift in Sources */,
 				81706CE228B0772B004EE352 /* MainViewController.swift in Sources */,
 				81E1804428ACCB7400882372 /* BaeminViewController.swift in Sources */,
+				81472ABB28B1EC5B0072BD26 /* LoginViewController.swift in Sources */,
 				81706CDF28B07713004EE352 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

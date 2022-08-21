@@ -39,9 +39,9 @@ class MainView: BaseView {
         $0.text = "내가 찜한 콘텐츠"
     }
     
-    let likeImage = UIImageView().then {
+    let likeImageButton = UIButton().then {
         $0.tintColor = .white
-        $0.image = UIImage(systemName: "checkmark")
+        $0.setImage(UIImage(systemName: "checkmark"), for: .normal)
     }
     
     let likeLabel = MidLabel().then {
@@ -54,9 +54,9 @@ class MainView: BaseView {
         $0.layer.borderColor = UIColor.white.cgColor
     }
     
-    let infoImage = UIImageView().then {
+    let infoImageButton = UIButton().then {
         $0.tintColor = .white
-        $0.image = UIImage(systemName: "info.circle")
+        $0.setImage(UIImage(systemName: "info.circle"), for: .normal)
     }
     
     let infoLabel = MidLabel().then {
@@ -96,7 +96,7 @@ class MainView: BaseView {
     }
     
     override func configure() {
-        [backgroundImage, alphaImage, titleLabel, tvTitle, movieTitle, likeTitle, likeImage, likeLabel, playButton, infoImage, infoLabel, preViewTitle, stackView].forEach {
+        [backgroundImage, alphaImage, titleLabel, tvTitle, movieTitle, likeTitle, likeImageButton, likeLabel, playButton, infoImageButton, infoLabel, preViewTitle, stackView].forEach {
             self.addSubview($0)
         }
         [firstImageView, secondImageView, thirdImageView].forEach {
@@ -145,31 +145,31 @@ class MainView: BaseView {
             make.width.equalTo(100)
         }
         
-        likeImage.snp.makeConstraints { make in
+        likeImageButton.snp.makeConstraints { make in
             make.leading.equalTo(60)
             make.top.equalTo(titleLabel.snp.bottom).offset(450)
         }
         
         likeLabel.snp.makeConstraints { make in
             make.leading.equalTo(40)
-            make.top.equalTo(likeImage.snp.bottom).offset(5)
-            make.centerX.equalTo(likeImage)
+            make.top.equalTo(likeImageButton.snp.bottom).offset(5)
+            make.centerX.equalTo(likeImageButton)
         }
         
         playButton.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(450)
-            make.leading.equalTo(likeImage.snp.trailing).offset(65)
+            make.leading.equalTo(likeImageButton.snp.trailing).offset(65)
         }
         
-        infoImage.snp.makeConstraints { make in
+        infoImageButton.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(450)
             make.leading.equalTo(playButton.snp.trailing).offset(65)
         }
         
         infoLabel.snp.makeConstraints { make in
             make.leading.equalTo(40)
-            make.top.equalTo(infoImage.snp.bottom).offset(5)
-            make.centerX.equalTo(infoImage)
+            make.top.equalTo(infoImageButton.snp.bottom).offset(5)
+            make.centerX.equalTo(infoImageButton)
         }
         
         preViewTitle.snp.makeConstraints { make in
