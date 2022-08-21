@@ -59,12 +59,15 @@ class LoginViewController: BaseViewController {
     @objc func signButtonClicked(_ sender: UIButton) {
         if mainView.emailPhoneTextField.text == "" || mainView.passWordTextField.text == "" {
             let alert = UIAlertController(title: "올바르지 않은 접근입니다", message: "이메일 주소 또는 전화번호와 패스워드를 다시 입력하십시오", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "되돌아가기", style: .destructive, handler: { _ in print("클릭함") }))
+            alert.addAction(UIAlertAction(title: "되돌아가기", style: .destructive, handler: { _ in  }))
             present(alert, animated: true)
-        } else if mainView.passWordTextField.accessibilityElementCount() < 6 {
+        } else if mainView.passWordTextField.text!.count < 6 {
             let alert = UIAlertController(title: "올바르지 않은 접근입니다", message: "비밀번호를 6자리 이상 입력해주세요", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "되돌아가기", style: .destructive, handler: { _ in print("클릭함") }))
+            alert.addAction(UIAlertAction(title: "되돌아가기", style: .destructive, handler: { _ in  }))
             present(alert, animated: true)
+        } else {
+            transionController(storyboard: "Main", vc: MainViewController(), transition: .present) {_ in
+            }
         }
         
     }

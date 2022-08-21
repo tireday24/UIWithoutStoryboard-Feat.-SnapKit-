@@ -15,6 +15,8 @@
 		81706CDF28B07713004EE352 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CDE28B07713004EE352 /* BaseView.swift */; };
 		81706CE228B0772B004EE352 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CE128B0772B004EE352 /* MainViewController.swift */; };
 		81706CE428B07733004EE352 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81706CE328B07733004EE352 /* MainView.swift */; };
+		818FE4EA28B23DF600F33A3D /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FE4E928B23DF600F33A3D /* JoinViewController.swift */; };
+		818FE4EC28B23E0900F33A3D /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FE4EB28B23E0900F33A3D /* JoinView.swift */; };
 		81B4E8D528B1F2050041653F /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B4E8D428B1F2050041653F /* TextField.swift */; };
 		81E1802528ACA80B00882372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1802428ACA80B00882372 /* AppDelegate.swift */; };
 		81E1802728ACA80B00882372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1802628ACA80B00882372 /* SceneDelegate.swift */; };
@@ -78,6 +80,8 @@
 		81706CDE28B07713004EE352 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		81706CE128B0772B004EE352 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		81706CE328B07733004EE352 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		818FE4E928B23DF600F33A3D /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		818FE4EB28B23E0900F33A3D /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
 		81B4E8D428B1F2050041653F /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		81E1802128ACA80B00882372 /* UIWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E1802428ACA80B00882372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		81706CDA28B0748E004EE352 /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				818FE4E828B23DCB00F33A3D /* Join */,
 				81706CE028B0771D004EE352 /* Main */,
 				81472AB928B1EC3E0072BD26 /* Login */,
 				81F9C4E328B2081F00334B04 /* Location */,
@@ -169,6 +174,15 @@
 				81706CE328B07733004EE352 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		818FE4E828B23DCB00F33A3D /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				818FE4E928B23DF600F33A3D /* JoinViewController.swift */,
+				818FE4EB28B23E0900F33A3D /* JoinView.swift */,
+			);
+			path = Join;
 			sourceTree = "<group>";
 		};
 		81E1801828ACA80B00882372 = {
@@ -366,12 +380,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E1804628ACCBE900882372 /* MelonViewController.swift in Sources */,
+				818FE4EA28B23DF600F33A3D /* JoinViewController.swift in Sources */,
 				8166F03228B1DDBF00E61B30 /* Image.swift in Sources */,
 				81E1802928ACA80B00882372 /* ViewController.swift in Sources */,
 				81F9C4ED28B20ABC00334B04 /* ReuseIdentifier.swift in Sources */,
 				81F9C52A28B2188500334B04 /* WebViewController.swift in Sources */,
 				81F9C4E228B204C200334B04 /* Button.swift in Sources */,
 				81F9C4E528B208F800334B04 /* LocationViewController.swift in Sources */,
+				818FE4EC28B23E0900F33A3D /* JoinView.swift in Sources */,
 				81E1802528ACA80B00882372 /* AppDelegate.swift in Sources */,
 				81706CE428B07733004EE352 /* MainView.swift in Sources */,
 				81F9C4E728B2090100334B04 /* LocationView.swift in Sources */,

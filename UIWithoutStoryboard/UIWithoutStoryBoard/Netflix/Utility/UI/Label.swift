@@ -63,3 +63,20 @@ class bottomLabel: UILabel {
         
     }
 }
+
+class loginInfo: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setUp() {
+        font = UIFont(name: "EuphemiaUCAS", size: 20)
+        textAlignment = .center
+        textColor = .lightGray
+    }
+}
