@@ -46,14 +46,14 @@ class LocationView: BaseView {
     
     override func setConstraints() {
         locationTextField.snp.makeConstraints { make in
-            make.leading.equalTo(30)
-            make.trailing.equalTo(-30)
-            make.top.equalTo(50)
+            make.leading.equalTo(20)
+            make.trailing.equalTo(-20)
+            make.top.equalTo(90)
             make.height.equalTo(50)
         }
         
         locationButton.snp.makeConstraints { make in
-            make.trailing.equalTo(-30)
+            make.trailing.equalTo(-20)
             make.top.equalTo(locationTextField.snp.bottom).offset(1)
             make.height.equalTo(44)
             make.width.equalTo(120)

@@ -19,6 +19,7 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
+//        NotificationCenter.default.addObserver(self, selector: #selector(searchLocationNotificationObserver(notification:)), name: .searchLocation, object: nil)
     }
     
     override func configure() {
@@ -28,9 +29,23 @@ class LoginViewController: BaseViewController {
         
     }
     
+//    @objc func searchLocationNotificationObserver(notification: NSNotification) {
+//        if let text = notification.userInfo?["location"] as? String {
+//            self.mainView.locationButton.setTitle(text, for: .normal)
+//        }
+//    }
+    
     @objc func locationButtonClicked(_ sender: UIButton) {
-        transionController(storyboard: "Main", vc: LocationViewController(), transition: .present) { _ in
+//        transionController(storyboard: "Main", vc: LocationViewController(), transition: .present) { _ in
+//        }
+        
+        let vc = LocationViewController()
+        vc.locationButtonActionHandler = { text in
+            self.mainView.locationButton.setTitle(text, for: .normal)
         }
+        let nv = UINavigationController(rootViewController: vc)
+        nv.modalPresentationStyle = .fullScreen
+        present(nv, animated: true)
     }
     
     @objc func offClickedSwitch(_ sender: UISwitch) {
