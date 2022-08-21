@@ -27,6 +27,11 @@
 		81E1804128ACB49C00882372 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 81E1804028ACB49C00882372 /* Then */; };
 		81E1804428ACCB7400882372 /* BaeminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1804328ACCB7400882372 /* BaeminViewController.swift */; };
 		81E1804628ACCBE900882372 /* MelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1804528ACCBE900882372 /* MelonViewController.swift */; };
+		81F9C4E228B204C200334B04 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4E128B204C200334B04 /* Button.swift */; };
+		81F9C4E528B208F800334B04 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4E428B208F800334B04 /* LocationViewController.swift */; };
+		81F9C4E728B2090100334B04 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4E628B2090100334B04 /* LocationView.swift */; };
+		81F9C4EB28B209E000334B04 /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4EA28B209E000334B04 /* Extension + UIViewController.swift */; };
+		81F9C4ED28B20ABC00334B04 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4EC28B20ABC00334B04 /* ReuseIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		81E1803928ACA84600882372 /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
 		81E1804328ACCB7400882372 /* BaeminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaeminViewController.swift; sourceTree = "<group>"; };
 		81E1804528ACCBE900882372 /* MelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonViewController.swift; sourceTree = "<group>"; };
+		81F9C4E128B204C200334B04 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		81F9C4E428B208F800334B04 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		81F9C4E628B2090100334B04 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		81F9C4EA28B209E000334B04 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
+		81F9C4EC28B20ABC00334B04 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,7 @@
 				8166F02F28B1B60400E61B30 /* Label.swift */,
 				8166F03128B1DDBF00E61B30 /* Image.swift */,
 				81B4E8D428B1F2050041653F /* TextField.swift */,
+				81F9C4E128B204C200334B04 /* Button.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -94,8 +105,9 @@
 		81706CDA28B0748E004EE352 /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
-				81472AB928B1EC3E0072BD26 /* Login */,
 				81706CE028B0771D004EE352 /* Main */,
+				81472AB928B1EC3E0072BD26 /* Login */,
+				81F9C4E328B2081F00334B04 /* Location */,
 				81706CDB28B076FE004EE352 /* Utility */,
 			);
 			path = Netflix;
@@ -140,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				811EDA4828AE20450076199D /* API */,
-				81E1803828ACA82A00882372 /* UI */,
+				81E1803828ACA82A00882372 /* UIWithoutStoryBoard */,
 				81E1802428ACA80B00882372 /* AppDelegate.swift */,
 				81E1802628ACA80B00882372 /* SceneDelegate.swift */,
 				81E1802828ACA80B00882372 /* ViewController.swift */,
@@ -152,15 +164,34 @@
 			path = UIWithoutStoryboard;
 			sourceTree = "<group>";
 		};
-		81E1803828ACA82A00882372 /* UI */ = {
+		81E1803828ACA82A00882372 /* UIWithoutStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				81F9C4E828B209BB00334B04 /* Extension */,
 				81706CDA28B0748E004EE352 /* Netflix */,
 				81E1803928ACA84600882372 /* KakaoViewController.swift */,
 				81E1804328ACCB7400882372 /* BaeminViewController.swift */,
 				81E1804528ACCBE900882372 /* MelonViewController.swift */,
 			);
-			path = UI;
+			path = UIWithoutStoryBoard;
+			sourceTree = "<group>";
+		};
+		81F9C4E328B2081F00334B04 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				81F9C4E428B208F800334B04 /* LocationViewController.swift */,
+				81F9C4E628B2090100334B04 /* LocationView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		81F9C4E828B209BB00334B04 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81F9C4EC28B20ABC00334B04 /* ReuseIdentifier.swift */,
+				81F9C4EA28B209E000334B04 /* Extension + UIViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +276,12 @@
 				81E1804628ACCBE900882372 /* MelonViewController.swift in Sources */,
 				8166F03228B1DDBF00E61B30 /* Image.swift in Sources */,
 				81E1802928ACA80B00882372 /* ViewController.swift in Sources */,
+				81F9C4ED28B20ABC00334B04 /* ReuseIdentifier.swift in Sources */,
+				81F9C4E228B204C200334B04 /* Button.swift in Sources */,
+				81F9C4E528B208F800334B04 /* LocationViewController.swift in Sources */,
 				81E1802528ACA80B00882372 /* AppDelegate.swift in Sources */,
 				81706CE428B07733004EE352 /* MainView.swift in Sources */,
+				81F9C4E728B2090100334B04 /* LocationView.swift in Sources */,
 				8166F03028B1B60400E61B30 /* Label.swift in Sources */,
 				81E1803A28ACA84600882372 /* KakaoViewController.swift in Sources */,
 				81E1802728ACA80B00882372 /* SceneDelegate.swift in Sources */,
@@ -255,6 +290,7 @@
 				81B4E8D528B1F2050041653F /* TextField.swift in Sources */,
 				81706CE228B0772B004EE352 /* MainViewController.swift in Sources */,
 				81E1804428ACCB7400882372 /* BaeminViewController.swift in Sources */,
+				81F9C4EB28B209E000334B04 /* Extension + UIViewController.swift in Sources */,
 				81472ABB28B1EC5B0072BD26 /* LoginViewController.swift in Sources */,
 				81706CDF28B07713004EE352 /* BaseView.swift in Sources */,
 			);

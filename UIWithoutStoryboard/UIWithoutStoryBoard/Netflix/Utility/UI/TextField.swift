@@ -20,6 +20,7 @@ class LoginTextField: UITextField {
     func setUp() {
         textAlignment = .center
         textColor = .white
+        tintColor = .white
         font = UIFont(name: "AvenirNext-DemiBold", size: 15)
         backgroundColor = .lightGray
         layer.borderWidth = 2
