@@ -23,6 +23,11 @@ class LoginViewController: BaseViewController {
     override func configure() {
         mainView.switchButton.addTarget(self, action: #selector(offClickedSwitch(_:)), for: .valueChanged)
         mainView.signButton.addTarget(self, action: #selector(signButtonClicked(_:)), for: .touchUpInside)
+        mainView.locationButton.addTarget(self, action: #selector(locationButtonClicked(_:)), for: .touchUpInside)
+        
+    }
+    
+    @objc func locationButtonClicked(_ sender: UIButton) {
         
     }
     

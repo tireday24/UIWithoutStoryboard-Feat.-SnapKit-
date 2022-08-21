@@ -34,8 +34,10 @@ class LoginView: BaseView {
        
     }
     
-    let locationTextField = LoginTextField().then {
-        $0.placeholder = "위치"
+    let locationButton = LoginButton().then {
+        $0.setTitle("위치", for: .normal)
+        $0.setTitleColor(.black, for: .normal)
+        $0.setTitleColor(.white, for: .highlighted)
         
     }
     
@@ -44,14 +46,9 @@ class LoginView: BaseView {
         
     }
     
-    let signButton = UIButton().then {
+    let signButton = LoginButton().then {
         $0.setTitle("회원가입", for: .normal)
         $0.setTitleColor(.black, for: .normal)
-        $0.backgroundColor = .lightGray
-        $0.layer.cornerRadius = 10
-        $0.layer.borderWidth = 2
-        $0.layer.borderColor = UIColor.clear.cgColor
-        $0.clipsToBounds = true
     }
     
     lazy var stackView = UIStackView().then {
@@ -90,7 +87,7 @@ class LoginView: BaseView {
             self.addSubview($0)
         }
         
-        [emailPhoneTextField, passWordTextField, nickNameTextField, locationTextField, recommendTextField, signButton].forEach {
+        [emailPhoneTextField, passWordTextField, nickNameTextField, locationButton, recommendTextField, signButton].forEach {
             stackView.addArrangedSubview($0)
         }
     }
