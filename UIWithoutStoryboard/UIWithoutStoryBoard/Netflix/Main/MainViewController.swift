@@ -23,7 +23,13 @@ class MainViewController: BaseViewController {
     
     
     override func configure() {
-        
+        mainView.likeImageButton.addTarget(self, action: #selector(likeButtonClicked(_:)), for: .touchUpInside)
+    }
+    
+    @objc func likeButtonClicked(_ sender: UIButton) {
+        transionController(storyboard: "Main", vc: LoginViewController(), transition: .present) { _ in
+            
+        }
     }
     
     
